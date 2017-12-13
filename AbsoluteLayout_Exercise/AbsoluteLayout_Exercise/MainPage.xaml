@@ -18,7 +18,7 @@
             <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="13">
                 Because you can reach people who aren't on
                 SkyApp by calling mobile and landline
-                numbers, or spending SMS, at low-cost rates.
+                numbers, or spending SMS, at low-cost rates.s
             </Label>
         </StackLayout>
     </AbsoluteLayout>

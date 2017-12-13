@@ -5,6 +5,10 @@ using System.Text;
 
 using Xamarin.Forms;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 namespace AbsoluteLayout_Exercise
 {
 	public partial class App : Application
@@ -18,8 +22,11 @@ namespace AbsoluteLayout_Exercise
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            // Handle when your app starts4
+		    AppCenter.Start("android=c7b985b6-3946-4f52-8165-9b902a6435d4;" + "uwp={Your UWP App secret here};" +
+		                    "ios={Your iOS App secret here}",
+		        typeof(Analytics), typeof(Crashes));
+        }
 
 		protected override void OnSleep ()
 		{
